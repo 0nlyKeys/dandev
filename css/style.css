@@ -1,0 +1,837 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #F8F7F1;
+    background-image: url(../img/fondodandevprueba.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: relative;
+}
+#whatsapp{
+    position: fixed;
+    right: 10px;
+    top: 90%;
+    z-index: 9999;
+}
+
+#btnPrincipal{
+    position: absolute;
+    text-decoration: none;
+    color: #F2F3C9;
+    background-color: #58b8bb;
+    padding: 20px 40px;
+    right: 45%;
+    top: 60%;
+    font-family: 'Comfortaa', sans-serif;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    transition: 0.5s;
+    z-index: 9999;
+}
+
+#btnPrincipal:hover{
+    background: transparent;
+    border: 1px solid #58b8bb;
+}
+.bg-nav{
+    background: #F8F7F1;
+    height: 100px;
+    z-index: 9999;
+}
+.bg-nav ul li a{
+    color: #055052;
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin: 0px 40px;
+    width: 116px;
+    text-align: center;
+    transition: 0.1s;
+}
+.bg-nav ul li a:hover{
+    color: #58b8bb;
+    border-left-style: solid;
+    border-left-width: 2px;
+    border-right-style: solid;
+    border-right-width: 2px;
+    border-radius: 20px;
+}
+
+@media only screen and (max-width: 600px){
+    header{
+        min-height: 50vh;
+        width: 100%;
+        background-color: #F8F7F1;
+        background-image: url(../img/fondodandevprueba.gif);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        position: relative;
+        margin-top: 100px;
+    }
+    .bg-nav{
+        background: #F8F7F1;
+        height: 100px;
+        z-index: 9999;
+        position: fixed;
+    }
+    #whatsapp{
+        display: none;
+    }
+
+    #btnPrincipal{
+        position: absolute;
+        text-decoration: none;
+        color: #F2F3C9;
+        background-color: #58b8bb;
+        padding: 20px 40px;
+        right: 20%;
+        top: 60%;
+        font-family: 'Comfortaa', sans-serif;
+        letter-spacing: 0.25em;
+        text-transform: uppercase;
+        transition: 0.5s;
+        z-index: 9999;
+    }
+}
+/*Sección Sobre mi*/
+#aboutme{
+    width: 100%;
+    position: relative;
+    background: #003638;
+    padding: 160px 0;
+    color: #F8F7F1;
+}
+#aboutme .textProfile{
+    letter-spacing: 0.205em;
+    align-items: center;
+    text-align: center;
+}
+#aboutme .textProfile h1{
+    font-family: 'Fugaz One', sans-serif;
+    text-transform: uppercase;    
+    line-height: 53px;
+    word-spacing: 1px;
+}
+#aboutme .textProfile h1 span{
+    color: #f3f2c9;
+    opacity: 70%;
+}
+#aboutme .textProfile p{
+    padding: 50px 0;
+    font-family: "Comfortaa", sans-serif;
+}
+
+#aboutme .profileImg{
+    width: 460px;
+    height: 660px;
+    background-image: url(../img/notimg.png);    
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+
+#aboutme .btnProfile{    
+    position: relative;
+
+}
+
+#aboutme .btnProfile a{
+    color: #F3F2C9;
+    font-family: "Comfortaa", sans-serif;
+    text-transform: uppercase;
+    position: absolute;  
+    font-size: 12px;
+    letter-spacing: 0.205em;
+    text-decoration: none;
+    background-color: #58b8bb; 
+    border: none;      
+    border-radius: 10px; 
+    padding: 25px;
+    bottom: 170px;
+    left: -71px;
+    opacity: 80%;
+}
+
+#aboutme .btnProfile a:after{
+    content: "";
+    position: absolute;
+    background-color: #F3F2C9;
+    height: 3px;
+    width: 0;
+    left: 35px;
+    bottom: 20px;
+    transition: 0.3s;
+}
+
+#aboutme .btnProfile a:hover:after{
+    width: 65%;
+}
+
+@media only screen and (max-width: 600px){
+    #aboutme{
+        width: 100%;
+        position: relative;
+        background: #003638;
+        padding: 90px 0;
+        color: #F8F7F1;
+    }
+    #aboutme .textProfile{
+        letter-spacing: 0.205em;
+    }
+    #aboutme .textProfile h1{
+        font-family: 'Fugaz One', sans-serif;
+        text-transform: uppercase;    
+        line-height: 53px;
+        word-spacing: 1px;
+    }
+    #aboutme .textProfile h1 span{
+        color: #f3f2c9;
+        opacity: 70%;
+    }
+    #aboutme .textProfile p{
+        padding: 50px 0;
+        font-family: "Comfortaa", sans-serif;
+    }
+    
+    #aboutme .profileImg{
+        width: 100%;
+        height: 660px;
+        background-image: url(../img/notimg.png);    
+        background-repeat: no-repeat;
+        border-radius: 10px;
+    }
+    
+    #aboutme .btnProfile{    
+        position: relative;
+    
+    }
+    
+    #aboutme .btnProfile a{
+        color: #F3F2C9;
+        font-family: "Comfortaa", sans-serif;
+        text-transform: uppercase;
+        position: absolute;  
+        font-size: 12px;
+        letter-spacing: 0.205em;
+        text-decoration: none;
+        background-color: #58b8bb; 
+        border: none;      
+        border-radius: 10px; 
+        padding: 25px;
+        bottom: -15px;
+        left: 41px;
+        opacity: 80%;
+    }
+    
+    #aboutme .btnProfile a:after{
+        content: "";
+        position: absolute;
+        background-color: #F3F2C9;
+        height: 3px;
+        width: 0;
+        left: 35px;
+        bottom: 20px;
+        transition: 0.3s;
+    }
+    
+    #aboutme .btnProfile a:hover:after{
+        width: 65%;
+    }
+}
+
+
+/*Sección Servicios*/
+.servicios{
+    height: 520px;
+}
+
+
+#services{
+    width: 100%;
+    position: relative;
+    background: #F8F7F1;
+    padding: 100px 0;
+    color: #003638;
+    text-align: center;
+}
+
+#services h1{
+    font-family: 'Fugaz One',sans-serif;
+    font-style: normal;
+    letter-spacing: 0.205em;
+    text-transform: uppercase;
+}
+
+#services .serviceOne{
+    width: 380px;
+    height: 110px;
+    background: #F1F1F1;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+}
+#services .serviceOne p{
+    font-family: 'Comfortaa',sans-serif;
+    font-size: 15px;
+    padding-top: 45px;
+}
+
+#services .iconsDesign{
+    height: 110px;
+    border-radius: 10px; 
+    transition: 0.1s;
+    visibility: hidden;
+    position: absolute;
+    width: 100%;
+    top: 0;
+}
+#services .iconsDesign img{
+    padding: 25px 0 0 0;
+}
+
+#services .serviceOne:hover .iconsDesign{ 
+    visibility: visible;    
+    background: rgba(88, 184, 187, 0.7);
+    
+}
+
+#services h2{
+    top: 130px;
+    font-family: 'Fugaz One',sans-serif;
+    font-size: 20px;
+    position: relative;
+    letter-spacing: 0.205em;
+    width: 80%;
+    cursor: default;
+}
+#services h2 span{
+    font-size: 32px;
+}
+
+#services h3{
+    top: 35px;
+    font-family: 'Fugaz One',sans-serif;
+    font-size: 20px;
+    position: relative;
+    letter-spacing: 0.205em;    
+    cursor: default;
+}
+#services h3 span{
+    font-size: 36px;
+}
+
+#services .serviceTwo{
+    width: 380px;
+    height: 110px;
+    background: #F1F1F1;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+    top: 130px;
+}
+#services .serviceTwo p{
+    font-family: 'Comfortaa',sans-serif;
+    font-size: 15px;
+    padding-top: 45px;
+}
+
+#services .iconsDev{
+    height: 110px;
+    border-radius: 10px; 
+    transition: 0.1s;
+    visibility: hidden;
+    position: absolute;
+    width: 100%;
+    top: 0;
+}
+#services .iconsDev img{
+    padding: 25px 0 0 0;
+}
+
+#services .serviceTwo:hover .iconsDev{ 
+    visibility: visible;    
+    background: rgba(88, 184, 187, 0.7);
+    
+}
+
+#services .serviceThree{
+    width: 380px;
+    height: 110px;
+    background: #F1F1F1;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+    top: 230px;
+}
+#services .serviceThree p{
+    font-family: 'Comfortaa',sans-serif;
+    font-size: 15px;
+    padding-top: 45px;
+}
+
+#services .iconsSoft{
+    height: 110px;
+    border-radius: 10px; 
+    transition: 0.1s;
+    visibility: hidden;
+    position: absolute;
+    width: 100%;
+    top: 0;
+}
+#services .iconsSoft img{
+    padding: 25px 0 0 0;
+}
+
+#services .serviceThree:hover .iconsSoft{ 
+    visibility: visible;    
+    background: rgba(88, 184, 187, 0.7);
+    
+}
+
+@media only screen and (max-width: 600px){
+    .servicios{
+        height: 520px;
+    }
+    
+    
+    #services{
+        width: 100%;
+        position: relative;
+        background: #F8F7F1;
+        padding: 30px 0;
+        color: #003638;
+        text-align: center;
+    }
+    
+    #services h1{
+        font-family: 'Fugaz One',sans-serif;
+        font-style: normal;
+        letter-spacing: 0.205em;
+        text-transform: uppercase;
+    }
+    
+    #services .serviceOne{
+        width: 100%;
+        height: 110px;
+        background: #F1F1F1;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        text-align: center;
+        position: relative;
+    }
+    #services .serviceOne p{
+        font-family: 'Comfortaa',sans-serif;
+        font-size: 15px;
+        padding-top: 45px;
+    }
+    
+    #services .iconsDesign{
+        height: 110px;
+        border-radius: 10px; 
+        transition: 0.1s;
+        visibility: hidden;
+        position: absolute;
+        width: 100%;
+        top: 0;
+    }
+    #services .iconsDesign img{
+        padding: 25px 0 0 0;
+    }
+    
+    #services .serviceOne:hover .iconsDesign{ 
+        visibility: visible;    
+        background: rgba(88, 184, 187, 0.7);
+        
+    }
+    
+    #services h2{
+        top: 20px;
+        font-family: 'Fugaz One',sans-serif;
+        font-size: 10px;
+        position: relative;
+        letter-spacing: 0.205em;
+        width: 100%;
+        cursor: default;
+    }
+    #services h2 span{
+        font-size: 22px;
+    }
+    
+    #services h3{
+        top: 35px;
+        font-family: 'Fugaz One',sans-serif;
+        font-size: 10px;
+        position: relative;
+        letter-spacing: 0.205em;    
+        cursor: default;
+    }
+    #services h3 span{
+        font-size: 26px;
+    }
+    
+    #services .serviceTwo{
+        width: 100%;
+        height: 110px;
+        background: #F1F1F1;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        text-align: center;
+        position: relative;
+        top: 25px;
+    }
+    #services .serviceTwo p{
+        font-family: 'Comfortaa',sans-serif;
+        font-size: 15px;
+        padding-top: 45px;
+    }
+    
+    #services .iconsDev{
+        height: 110px;
+        border-radius: 10px; 
+        transition: 0.1s;
+        visibility: hidden;
+        position: absolute;
+        width: 100%;
+        top: 0;
+    }
+    #services .iconsDev img{
+        padding: 25px 0 0 0;
+    }
+    
+    #services .serviceTwo:hover .iconsDev{ 
+        visibility: visible;    
+        background: rgba(88, 184, 187, 0.7);
+        
+    }
+    
+    #services .serviceThree{
+        width: 100%;
+        height: 110px;
+        background: #F1F1F1;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        text-align: center;
+        position: relative;
+        top: 30px;
+    }
+    #services .serviceThree p{
+        font-family: 'Comfortaa',sans-serif;
+        font-size: 15px;
+        padding-top: 45px;
+    }
+    
+    #services .iconsSoft{
+        height: 110px;
+        border-radius: 10px; 
+        transition: 0.1s;
+        visibility: hidden;
+        position: absolute;
+        width: 100%;
+        top: 0;
+    }
+    #services .iconsSoft img{
+        padding: 25px 0 0 0;
+    }
+    
+    #services .serviceThree:hover .iconsSoft{ 
+        visibility: visible;    
+        background: rgba(88, 184, 187, 0.7);
+        
+    }
+}
+
+/*Sección Experience*/
+#experience{
+    width: 100%;
+    position: relative;
+    background: #F8F7F1;
+    padding: 140px 0;
+    color: #003638;
+    text-align: center;
+    border-top: 1px solid #B8AFAF;
+}
+
+#experience h1{
+    font-family: 'Fugaz One',sans-serif;
+    font-style: normal;
+    letter-spacing: 0.205em;
+    text-transform: uppercase;
+}
+
+#experience .boxProject{
+    position:relative;
+    width: 310px;
+    height: 200px;
+    margin: 10px;
+}
+#experience .boxProject img{
+    width: 100%;
+    height: 200px;
+    padding: 10px 0px;
+}
+#experience .boxProject:hover img{
+    -webkit-filter: blur(4px); /* Chrome, Safari, Opera */
+    filter: blur(4px);
+}
+#experience .boxProject h2{
+    position: absolute;
+    width: 90%;
+    font-family: 'Fugaz One',sans-serif;
+    letter-spacing: 7px;
+    text-shadow:1px 1px 2px #055052 ;
+    font-size: 20px;
+    color: #ffff;
+    top: 40%;
+    visibility: hidden;
+}
+#experience .boxProject:hover h2{
+    visibility: visible;
+}
+
+
+@media only screen and (max-width: 600px){
+    #experience{
+        width: 100%;
+        position: relative;
+        background: #F8F7F1;
+        padding: 50px 0;
+        color: #003638;
+        text-align: center;
+        border-top: 1px solid #B8AFAF;
+    }
+    
+    #experience h1{
+        font-family: 'Fugaz One',sans-serif;
+        font-style: normal;
+        letter-spacing: 0.205em;
+        text-transform: uppercase;
+    }
+
+    #experience .boxProject{
+        position:relative;
+        width: 100%;
+        height: 200px;
+        margin: 10px;
+    }
+    #experience .boxProject img{
+        width: 100%;
+        height: 200px;
+        padding: 10px 0px;
+    }
+    #experience .boxProject:hover img{
+        -webkit-filter: blur(4px); /* Chrome, Safari, Opera */
+        filter: blur(4px);
+    }
+    #experience .boxProject h2{
+        position: absolute;
+        width: 90%;
+        font-family: 'Fugaz One',sans-serif;
+        letter-spacing: 7px;
+        text-shadow:1px 1px 2px #055052 ;
+        font-size: 20px;
+        color: #ffff;
+        top: 40%;
+        visibility: hidden;
+    }
+    #experience .boxProject:hover h2{
+        visibility: visible;
+    }
+}
+/*Sección Middle*/
+.sectionMiddle{
+    background-color: #003638;
+    width: 100%;
+    height: 150px;
+    text-align: center;
+    position: relative;
+}
+.sectionMiddle h3{
+    color: #F2F3C9;
+    font-family: 'Comfortaa',sans-serif;
+    position: absolute;
+    top:60px;
+    left:36%;
+    letter-spacing: 0.205em;
+    font-size: 20px;
+
+}
+.sectionMiddle h4{
+    color: #F2F3C9;
+    font-family: 'Comfortaa',sans-serif;
+    position: absolute;
+    top:90px;
+    left:47%;
+    font-size: 15px;
+    letter-spacing: 0.205em;
+}
+
+.lineMiddle{
+    width: 355px;
+    height: 2px;
+    background-color: #F2F3C9;
+    margin-top: 73px;
+} 
+
+@media only screen and (max-width: 600px){
+    .sectionMiddle{
+        background-color: #003638;
+        width: 100%;
+        height: 150px;
+        text-align: center;
+        position: relative;
+    }
+    .sectionMiddle h3{
+        color: #F2F3C9;
+        font-family: 'Comfortaa',sans-serif;
+        position: absolute;
+        top:50px;
+        left:4%;
+        letter-spacing: 0.205em;
+        font-size: 12px;
+    
+    }
+    .sectionMiddle h4{
+        color: #F2F3C9;
+        font-family: 'Comfortaa',sans-serif;
+        position: absolute;
+        top:82px;
+        left:38%;
+        font-size: 9px;
+        letter-spacing: 0.205em;
+    }
+    
+    .lineMiddle{
+        width: 80px;
+        height: 2px;
+        background-color: #F2F3C9;
+        margin-top: 73px;
+    } 
+
+
+}
+/*Sección Projects*/
+#projects{
+    width: 100%;
+    position: relative;
+    background: #F8F7F1;
+    padding: 140px 0;
+    color: #003638;
+    text-align: center;
+    border-top: 1px solid #B8AFAF;
+}
+
+#projects h1{
+    font-family: 'Fugaz One',sans-serif;
+    font-style: normal;
+    letter-spacing: 0.205em;
+    text-transform: uppercase;
+}
+
+.eal{
+    border-top: 1px solid #B8AFAF;
+    width: 100%;
+    height: 200px;
+    background-color: #F8F7F1 ;
+    text-align: center;
+}
+
+.eal a{
+    text-decoration: none;
+    color: #003638;
+}
+
+.infoeal{
+    margin-top: 30px;
+}
+.infoeal i{
+    font-size: 64px;
+}
+.infoeal p,.infoeal a{
+    font-size: 20px;
+    font-family: 'Comfortaa',sans-serif;
+    letter-spacing: 0.205em;
+}
+@media only screen and (max-width: 600px){
+    .eal{
+        border-top: 1px solid #B8AFAF;
+        width: 100%;
+        height: 200px;
+        background-color: #F8F7F1 ;
+        text-align: center;
+    }
+    
+    .eal a{
+        text-decoration: none;
+        color: #003638;
+    }
+    
+    .infoeal{
+        margin-top: 30px;
+    }
+    .infoeal i{
+        font-size: 30px;
+    }
+    .infoeal p,.infoeal a{
+        font-size: 13px;
+        font-family: 'Comfortaa',sans-serif;
+        letter-spacing: 0.205em;
+    }
+}
+footer{
+    width:100%;
+    height:160px;  
+    background:#003638;
+    text-align: center;
+}
+
+footer .textFooter{
+    color: #F2F3C9;
+}
+footer i{
+    color:white;
+    letter-spacing: 2.25em;
+    font-size: 30px;
+}
+footer .iconsFooter{
+    margin-top: 20px;
+    margin-left: 27%;
+}
+footer .logoFooter{
+    margin-right: -27%;
+    margin-left: -143px;
+}
+
+@media only screen and (max-width: 600px){
+    footer{
+        width:100%;
+        height:240px;  
+        background:#003638;
+        text-align: center;
+    }
+    
+    footer .textFooter{
+        color: #F2F3C9;
+    }
+    footer i{
+        color:white;
+        letter-spacing: 2.25em;
+        font-size: 30px;
+    }
+    footer .iconsFooter{
+        margin-top: 20px;
+        margin-left: 0%;
+        font-size: 0px;
+    }
+    footer .logoFooter{
+        margin-left: 0px;
+    }
+}
